@@ -1,11 +1,12 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { App } from './App'
+import ReactDOM from 'react-dom'
+import  App  from './App'
 
-const node = document.getElementById('root') as HTMLElement
-const root = ReactDOM.createRoot(node)
-root.render(
+//const node = document.getElementById('root') as HTMLElement
+//const root = ReactDOM.createRoot(node)
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 )
